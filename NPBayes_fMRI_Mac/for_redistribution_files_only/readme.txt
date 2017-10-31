@@ -3,7 +3,7 @@ MATLAB Compiler
 1. Prerequisites for Deployment 
 
 . Verify the MATLAB Runtime is installed and ensure you    
-  have installed version 9.0.1 (R2016a).   
+  have installed version 9.2 (R2017a).   
 
 . If the MATLAB Runtime is not installed, do the following:
   (1) enter
@@ -15,7 +15,7 @@ MATLAB Compiler
 
   (2) run the MATLAB Runtime installer.
 
-Or download the Macintosh version of the MATLAB Runtime for R2016a 
+Or download the Macintosh version of the MATLAB Runtime for R2017a 
 from the MathWorks Web site by navigating to
 
    http://www.mathworks.com/products/compiler/mcr/index.html
@@ -33,35 +33,35 @@ NOTE: You will need administrator rights to run MCRInstaller.
 
 Files to package for Standalone 
 ================================
--run_NPBayes.sh (shell script for temporarily setting environment variables and executing 
- the application)
+-run_NPBayes_fMRI.sh (shell script for temporarily setting environment variables and 
+ executing the application)
    -to run the shell script, type
    
-       ./run_NPBayes.sh <mcr_directory> <argument_list>
+       ./run_NPBayes_fMRI.sh <mcr_directory> <argument_list>
        
     at Linux or Mac command prompt. <mcr_directory> is the directory 
-    where version 9.0.1 of the MATLAB Runtime is installed or the directory where 
+    where version 9.2 of the MATLAB Runtime is installed or the directory where 
     MATLAB is installed on the machine. <argument_list> is all the 
     arguments you want to pass to your application. For example, 
 
-    If you have version 9.0.1 of the MATLAB Runtime installed in 
-    /mathworks/home/application/v901, run the shell script as:
+    If you have version 9.2 of the MATLAB Runtime installed in 
+    /mathworks/home/application/v92, run the shell script as:
     
-       ./run_NPBayes.sh /mathworks/home/application/v901
+       ./run_NPBayes_fMRI.sh /mathworks/home/application/v92
        
     If you have MATLAB installed in /mathworks/devel/application/matlab, 
     run the shell script as:
     
-       ./run_NPBayes.sh /mathworks/devel/application/matlab
+       ./run_NPBayes_fMRI.sh /mathworks/devel/application/matlab
 -MCRInstaller.zip 
    -if end users are unable to download the MATLAB Runtime using the above  
     link, include it when building your component by clicking 
     the "Runtime downloaded from web" link in the Deployment Tool
--The Macintosh bundle directory structure NPBayes.app 
+-The Macintosh bundle directory structure NPBayes_fMRI.app 
    -this can be gathered up using the zip command 
-    zip -r NPBayes.zip NPBayes.app
+    zip -r NPBayes_fMRI.zip NPBayes_fMRI.app
     or the tar command 
-    tar -cvf NPBayes.tar NPBayes.app
+    tar -cvf NPBayes_fMRI.tar NPBayes_fMRI.app
 -This readme file 
 
 3. Definitions
@@ -82,16 +82,16 @@ In the following directions, replace MCR_ROOT by the directory where the MATLAB 
 If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the concatenation 
    of the following strings:
 
-    MCR_ROOT/v901/runtime/maci64:
-    MCR_ROOT/v901/sys/os/maci64:
-    MCR_ROOT/v901/bin/maci64
+    MCR_ROOT/v92/runtime/maci64:
+    MCR_ROOT/v92/sys/os/maci64:
+    MCR_ROOT/v92/bin/maci64
 
 If it is defined, set it to the concatenation of these strings:
 
     ${LD_LIBRARY_PATH}: 
-    MCR_ROOT/v901/runtime/maci64:
-    MCR_ROOT/v901/sys/os/maci64:
-    MCR_ROOT/v901/bin/maci64
+    MCR_ROOT/v92/runtime/maci64:
+    MCR_ROOT/v92/sys/os/maci64:
+    MCR_ROOT/v92/bin/maci64
 
    For more detail information about setting the MATLAB Runtime paths, see Package and 
    Distribute in the MATLAB Compiler documentation in the MathWorks Documentation Center.
@@ -104,7 +104,7 @@ If it is defined, set it to the concatenation of these strings:
         NOTE: The environment variable syntax utilizes forward 
               slashes (/), delimited by colons (:).  
         NOTE: When deploying standalone applications, it is possible 
-              to run the shell script file run_NPBayes.sh 
+              to run the shell script file run_NPBayes_fMRI.sh 
               instead of setting environment variables. See 
               section 2 "Files to Deploy and Package".    
 
