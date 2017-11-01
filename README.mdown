@@ -33,7 +33,7 @@ The repository contains the following folders:
 * Run the MyAppInstaller file located in the for_distribution subfolder of the NPBayes_fMRI_YOUR_OS folder. Upon completion, you should get a NPBayes_fMRI executable (or app) file in your specified directory.
 
 ## Example
-===
+
 
 ### Inference
 
