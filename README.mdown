@@ -12,7 +12,7 @@ Methodology and the software are described in the manuscripts below:
 
 > Zhang, L., Guindani, M., Versace, F., Engelmann, J.M. and Vannucci, M. (2016). A Spatio-Temporal Nonparametric Bayesian Model of Multi-Subject fMRI Data. Annals of Applied Statistics, 10(2), 638-666.
 
-> Kook, J.H., Guindani, M., Zhang, L. and Vannucci, M. (2018). NPBayes-fMRI: Nonparametric Bayesian General Linear Models for Single- and Multi-Subject fMRI Data. Statistics in Biosciences, in press.
+> Kook, J.H., Guindani, M., Zhang, L. and Vannucci, M. (2018). NPBayes-fMRI: Nonparametric Bayesian General Linear Models for Single- and Multi-Subject fMRI Data. Statistics in Biosciences, [in press](http://www.stat.rice.edu/~marina/papers/SIBS_online.pdf).
 
 The code was released to the public on 10/31/17.
 
