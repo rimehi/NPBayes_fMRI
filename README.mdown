@@ -51,19 +51,20 @@ Once you run NPBayes_fMRI, select **Model Fitting** and follow the instructions 
     
     * ROI NIFTI Directory: Select the Example\MARSBAR_ROIs folder
     
-    *Brain Template Image: Select *Load Nifti Brain Template Image* and load the 'ch2.nii' file found in the Example folder
+    * Brain Template Image: Select **Load Nifti Brain Template Image** and load the 'ch2.nii' file found in the Example folder
 
 4. For **Data Files**, select: 
+
     * data.mat file found on the Example folder
 
 For long time-points select:
 
-    * 'multi_data.mat' file found on the Example folder for the multiple simulus case
-    * 'single_data.mat' file found on the Example folder for the single simulus case
+    * multi_data.mat file found on the Example folder for the multiple simulus case
+    * single_data.mat file found on the Example folder for the single simulus case
 
 5. For Parameter Setting select the default setting by clicking **yes**
 
-6. Initiate model fitting by pressing **Run Model**
+6. Initiate model fitting by pressing **Run Model**. Upon completion, a 'result.mat' file will be generated in the output directory that you defined at Step 1
 
 ### Visualization
 
