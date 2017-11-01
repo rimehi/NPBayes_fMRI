@@ -1,5 +1,4 @@
 NPBayes_fMRI
-
 ===
 
 ---
@@ -69,7 +68,7 @@ For long time-points select:
 
 ### Visualization
 
-To visualize your inference results, select the **Visualization** after loading NPBayes_fMRI and load the 'result.mat' file located in the output directory using **Load Output**
+To visualize your inference results, select the **Visualization** tab after loading NPBayes_fMRI and load the 'result.mat' file located in the output directory using **Load Output**
 
 There are a couple thing to keep in mind while using the Visualization part of the GUI.
 
