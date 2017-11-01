@@ -1,4 +1,4 @@
-%%  Installation of the GUI
+%% Installation of the GUI
 
 The files contain two standalone packages:
 
