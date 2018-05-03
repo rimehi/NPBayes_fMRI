@@ -1,6 +1,6 @@
 NPBayes_fMRI
 ===
-
+![image](https://cpb-us-e1.wpmucdn.com/blogs.rice.edu/dist/0/5714/files/2017/12/figureNPBayes-1txt4ez-1024x696-y9y6qq.jpg)
 ---
 
 ## Description
@@ -83,4 +83,3 @@ There are a couple thing to keep in mind while using the Visualization part of t
     * If you move around while the GUI is plotting something, the displayed figured may be plotted in the control figure, not the actual figure plot.
 
     * For smooth experience of the GUI, while using the sliders, you may find it easier to drag the slider around the location where you want it to be, and then use the arrows to adjust the value for precision (Rather than using the arrows to get to the location/value you want). 
-
